@@ -1,0 +1,138 @@
+.info {
+  @include rem(margin-bottom, 10px);
+
+  &_foto {
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      box-shadow:
+              5px 5px 5px gray,
+              -5px 5px 5px gray;
+    }
+  }
+
+  &_name {
+    text-shadow: 3px 2px 3px gray;
+
+    h1 {
+      font-weight: bold;
+      color: $text-color3;
+      @include rem(font-size, 36px);
+    }
+
+    h2 {
+      font-weight: bold;
+      color: $text-color4;
+      @include rem(font-size, 28px);
+    }
+  }
+
+  &_contact {
+
+    ul {
+
+      li {
+        list-style: none;
+        @include rem(margin-left, -40px);
+        @include rem(font-size, 16px);
+
+        @include tablet {
+          @include rem(margin-bottom, 10px);
+        }
+
+        @include desktop {
+          @include rem(margin-bottom, 5px);
+        }
+
+        i{
+          color: $text-color1;
+          background-color: $bg-color-icons;
+          border-radius: 50%;
+          text-align: center;
+          @include rem(font-size, 26px);
+          @include rem(line-height, 40px);
+          @include rem(width, 40px);
+          @include rem(height, 40px);
+
+          &:hover {
+            background-color: darkred;
+            box-shadow: 3px 3px 3px gray;
+          }
+        }
+
+        span, a {
+          @include rem(line-height, 40px);
+          @include rem(margin-left, 10px);
+          vertical-align: top;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+.about {
+  @include rem(margin-bottom, 10px);
+
+  &_title {
+
+    h2 {
+      font-weight: bold;
+      text-shadow: 3px 2px 3px gray;
+      color: $text-color4;
+      @include rem(font-size, 28px);
+    }
+  }
+
+  &_main {
+    @include rem(padding, 10px 0);
+
+    p {
+      @include rem(margin, 0);
+      text-align: justify;
+    }
+  }
+}
+
+
+
+.skills{
+  @include rem(margin-bottom, 10px);
+
+  &_title {
+
+    h2 {
+      font-weight: bold;
+      color: $text-color4;
+      text-shadow: 3px 2px 3px gray;
+      @include rem(font-size, 28px);
+    }
+  }
+
+  &_content {
+    @include rem(padding, 10px 0);
+
+    ul {
+      list-style: none;
+      @include rem(padding, 0);
+      @include rem(margin, 0);
+
+      li {
+        @include rem(padding-bottom, 5px);
+      }
+    }
+
+    progress {
+      width: 100%;
+      background-color: $bg-color-progress1;
+      @include rem(height, 20px);
+
+      &::-webkit-progress-value {
+        background-color: $bg-color-progress2;
+      }
+    }
+  }
+}

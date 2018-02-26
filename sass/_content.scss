@@ -1,0 +1,215 @@
+.interests {
+
+  h2 {
+    display: inline;
+    background-color: $bg-color-title-1;
+    @include rem(padding, 0 5px);
+    @include rem(border-radius, 5px);
+    color: $text-color1;
+    box-shadow: 3px 3px 3px gray;
+    @include rem(font-size, 28px);
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.education {
+
+  h2 {
+    display: inline;
+    background-color: $bg-color-title-2;
+    @include rem(padding, 0 5px);
+    @include rem(border-radius, 5px);
+    color: $text-color1;
+    box-shadow: 3px 3px 3px gray;
+    @include rem(font-size, 28px);
+  }
+
+  &_table {
+    @include rem(margin-top, 5px);
+    @include rem(margin-bottom, 15px);
+    display: table;
+    width: 100%;
+
+    &-row {
+      display: table-row;
+
+      dt {
+        display: table-cell;
+        @include rem(padding, 5px 5px 5px 0);
+        width: 15%;
+      }
+
+      dd {
+        display: table-cell;
+        @include rem(padding, 5px 5px 5px 0);
+
+        p {
+          @include rem(margin, 0);
+          text-align: justify;
+          font-style: italic;
+          font-family: "Roboto-Italic", sans-serif;
+
+          &:first-child {
+            color: $text-color2;
+            font-style: normal;
+          }
+        }
+
+        &:last-child {
+          width: 10%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.publications {
+
+  h2 {
+    display: inline;
+    background-color: $bg-color-title-1;
+    @include rem(padding, 0 5px);
+    @include rem(border-radius, 5px);
+    color: $text-color1;
+    box-shadow: 3px 3px 3px gray;
+    @include rem(font-size, 28px);
+  }
+
+  &_table {
+    @include rem(margin-top, 5px);
+    @include rem(margin-bottom, 15px);
+    display: table;
+    width: 100%;
+
+    &-row {
+      display: table-row;
+
+      dt {
+        display: table-cell;
+        @include rem(padding, 5px 5px 5px 0);
+        width: 15%;
+      }
+
+      dd {
+        display: table-cell;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.awards {
+
+  h2 {
+    display: inline;
+    background-color: $bg-color-title-2;
+    @include rem(padding, 0 5px);
+    @include rem(border-radius, 5px);
+    color: $text-color1;
+    box-shadow: 3px 3px 3px gray;
+    @include rem(font-size, 28px);
+  }
+
+  &_table {
+    @include rem(margin-top, 5px);
+    @include rem(margin-bottom, 15px);
+    display: table;
+    width: 100%;
+
+    &-row {
+      display: table-row;
+
+      dt {
+        display: table-cell;
+        @include rem(padding, 5px 5px 5px 0);
+        width: 15%;
+      }
+
+      dd {
+        display: table-cell;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+
+.experience {
+
+  h2 {
+    display: inline;
+    background-color: $bg-color-title-1;
+    @include rem(padding, 0 5px);
+    @include rem(border-radius, 5px);
+    color: $text-color1;
+    box-shadow: 3px 3px 3px gray;
+    @include rem(font-size, 28px);
+  }
+
+  &_table {
+    @include rem(margin-top, 5px);
+    @include rem(margin-bottom, 15px);
+    display: table;
+    width: 100%;
+
+    &-row {
+      display: table-row;
+
+      dt {
+        display: table-cell;
+        @include rem(padding, 5px 5px 5px 0);
+        width: 15%;
+      }
+
+      dd {
+        display: table-cell;
+        @include rem(padding, 5px 5px 5px 0);
+
+        P {
+          @include rem(margin, 0);
+          text-align: justify;
+          font-style: italic;
+          font-family: "Roboto-Italic", sans-serif;
+
+          &:first-child {
+            color: $text-color2;
+            font-style: normal;
+          }
+        }
+
+        &:last-child {
+          width: 10%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.other {
+
+  h2 {
+    display: inline;
+    background-color: $bg-color-title-2;
+    @include rem(padding, 0 5px);
+    @include rem(border-radius, 5px);
+    color: $text-color1;
+    box-shadow: 3px 3px 3px gray;
+    @include rem(font-size, 28px);
+  }
+
+  h3 {
+    @include rem(margin, 10px 0);
+    color: $text-color2;
+    @include rem(font-size, 24px);
+  }
+
+  p {
+    text-align: justify;
+    @include rem(margin, 0);
+  }
+}

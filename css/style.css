@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/roboto-regular-webfont"), format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+.wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  width: 95%;
+  background-color: #3e5486;
+}
+
+.filemanager {
+  margin: 0 auto;
+  width: 90%;
+  background-color: lightgray;
+}
+
+.filemanager_table {
+  display: table;
+  border-collapse: collapse;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.filemanager_table-input {
+  display: table-row;
+}
+
+.filemanager_table-input li {
+  display: table-cell;
+  padding: 5px;
+}
+
+.filemanager_table-input li input {
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.filemanager_table-input li button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 5px;
+}
+
+.filemanager_table-input li button.action {
+  border: 2px solid darkblue;
+  background-color: lightblue;
+}
+
+.filemanager_table-input li button.action:hover {
+  background-color: blue;
+}
+
+.filemanager_table-path {
+  display: table-row;
+  border: 2px solid blue;
+  width: 100%;
+}
+
+.filemanager_table-path li {
+  display: table-cell;
+  margin: 0;
+  padding: 5px;
+}
+
+.filemanager_table-title {
+  display: table-row;
+  border: 2px solid blue;
+}
+
+.filemanager_table-title li {
+  display: table-cell;
+  margin: 0;
+  padding: 5px;
+  border: 2px solid blue;
+  width: 10%;
+  text-align: center;
+}
+
+.filemanager_table-title li:first-child {
+  width: 50%;
+  text-align: left;
+}
+
+.filemanager_table-files {
+  display: table-row;
+  width: 100%;
+}
+
+.filemanager_table-files:hover {
+  border: 1px solid blue;
+}
+
+.filemanager_table-files:hover li:last-child button {
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.filemanager_table-files:hover li:last-child button.action {
+  border: 2px solid darkblue;
+  background-color: lightblue;
+}
+
+.filemanager_table-files:hover li:last-child button.action:hover {
+  background-color: blue;
+}
+
+.filemanager_table-files:hover li:last-child button.danger {
+  border: 2px solid brown;
+  background-color: #F19425;
+}
+
+.filemanager_table-files:hover li:last-child button.danger:hover {
+  background-color: red;
+}
+
+.filemanager_table-files li {
+  display: table-cell;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
+  margin: 0;
+  padding: 5px;
+  width: 100px;
+  max-width: 100px;
+  text-align: center;
+}
+
+.filemanager_table-files li:last-child {
+  text-align: left;
+}
+
+.filemanager_table-files li:last-child button {
+  display: none;
+}
+
+.filemanager_table-files .dir {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  max-width: 300px;
+  text-align: left;
+}
+
+.filemanager_table-files .dir button {
+  padding: 5px;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+}
+
+.filemanager_table-files .dir button i {
+  margin-right: 3px;
+}
+
+.filemanager_table-files .dir button:focus {
+  outline: 0 !important;
+}
+
+.filemanager_table-files .file {
+  display: table-cell;
+  width: 30%;
+  text-align: left;
+}
+
+.alert {
+  display: none;
+  padding: 10px;
+  color: darkred;
+}

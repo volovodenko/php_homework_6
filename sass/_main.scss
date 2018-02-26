@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('../fonts/roboto-regular-webfont'), format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  @include rem(margin, 0 auto);
+  width: 95%;
+  background-color: #3e5486;
+}
+
+.filemanager {
+  margin: 0 auto;
+  width: 90%;
+  //border: 2px solid blue;
+  background-color: lightgray;
+  //border: 1px solid black;
+
+
+
+}
+
+.filemanager_table {
+  display: table;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid blue;
+  //border: 1px solid black;
+
+  &-input {
+    display: table-row;
+
+
+    li {
+      display: table-cell;
+      padding: 5px;
+      input {
+        //border: 2px solid darkblue;
+        border-radius: 5px;
+        //padding: 3px;
+        margin-right: 5px;
+      }
+
+      button {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 3px;
+        margin-right: 5px;
+
+        &.action {
+          border: 2px solid darkblue;
+          background-color: lightblue;
+          &:hover {
+            background-color: blue;
+          }
+        }
+      }
+    }
+  }
+
+  &-path {
+    display: table-row;
+    border: 2px solid blue;
+    width: 100%;
+
+    li {
+      display: table-cell;
+      margin: 0;
+      padding: 5px;
+
+
+
+
+
+    }
+  }
+
+  &-title {
+    display: table-row;
+    border: 2px solid blue;
+
+    li {
+      display: table-cell;
+      margin: 0;
+      padding: 5px;
+      border: 2px solid blue;
+      width: 10%;
+      text-align: center;
+
+      &:first-child {
+        width: 50%;
+        text-align: left;
+      }
+    }
+  }
+
+  &-files {
+    display: table-row;
+    width: 100%;
+
+    //border: 1px solid black;
+
+    &:hover {
+      border: 1px solid blue;
+
+      li:last-child {
+
+        button {
+          display: inline-block;
+          margin-right: 5px;
+          border-radius: 5px;
+          padding: 3px;
+
+          &.action {
+            border: 2px solid darkblue;
+            background-color: lightblue;
+            &:hover {
+              background-color: blue;
+            }
+          }
+
+          &.danger {
+            border: 2px solid brown;
+            background-color: #F19425;
+            &:hover {
+              background-color: red;
+            }
+
+          }
+
+          //margin-right: 10px;
+        }
+      }
+    }
+
+    li {
+      display: table-cell;
+      border-left: 2px solid blue;
+      border-right: 2px solid blue;
+      margin: 0;
+      padding: 5px;
+      //border: 1px solid black;
+      width: 100px;
+      max-width: 100px;
+      text-align: center;
+
+      &:last-child {
+        text-align: left;
+
+        button {
+          display: none;
+
+          &:focus {
+            //outline: 0 !important;
+          }
+
+        }
+
+      }
+    }
+
+    .dir {
+      display: table-cell;
+      margin: 0;
+      padding: 0;
+      width: 30%;
+      max-width: 300px;
+      text-align: left;
+
+      button {
+        padding: 5px;
+        width: 100%;
+        margin: 0;
+
+        text-align: left;
+        border: none;
+        background-color: inherit;
+        font-size: 1rem;
+
+        i {
+          margin-right: 3px;
+        }
+
+        &:focus {
+          outline: 0 !important;
+        }
+
+      }
+
+    }
+
+    .file {
+      display: table-cell;
+      width: 30%;
+      text-align: left;
+    }
+  }
+}
+
+
+.alert {
+  display: none;
+  padding: 10px;
+  color: darkred;
+}
+
+
+
