@@ -30,7 +30,7 @@ function checkName($name, $currDir)
     $array = array_filter($array); //фильтруем Null
 
     foreach ($array as $value) {
-        if ($value == $name) { //если такое имя уже есть
+        if (mb_strtolower($value) == mb_strtolower($name)) { //если такое имя уже есть
             return false;
         }
     }
