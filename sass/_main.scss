@@ -111,15 +111,42 @@ html, body {
     //border: 1px solid black;
 
     &:hover {
-      border: 1px solid blue;
+
+      outline: 1px solid blue;
 
       li:last-child {
-
         button {
           display: inline-block;
-          margin-right: 5px;
+        }
+      }
+    }
+
+    li {
+      box-sizing: content-box;
+      display: table-cell;
+      border-left: 2px solid blue;
+      border-right: 2px solid blue;
+      margin: 0;
+      padding: 0;
+      height: 30px;
+      //border: 1px solid black;
+      width: 100px;
+      max-width: 100px;
+      text-align: center;
+      vertical-align: middle;
+
+      &:last-child {
+        text-align: left;
+
+        button {
+          display: none;
+          margin : 0;
+          margin-left: 5px;
           border-radius: 5px;
+          height: 25px;
           padding: 3px;
+
+
 
           &.action {
             border: 2px solid darkblue;
@@ -138,28 +165,6 @@ html, body {
 
           }
 
-          //margin-right: 10px;
-        }
-      }
-    }
-
-    li {
-      display: table-cell;
-      border-left: 2px solid blue;
-      border-right: 2px solid blue;
-      margin: 0;
-      padding: 5px;
-      //border: 1px solid black;
-      width: 100px;
-      max-width: 100px;
-      text-align: center;
-
-      &:last-child {
-        text-align: left;
-
-        button {
-          display: none;
-
           &:focus {
             //outline: 0 !important;
           }
@@ -173,12 +178,14 @@ html, body {
       display: table-cell;
       margin: 0;
       padding: 0;
+      padding-left: 5px;
       width: 30%;
       max-width: 300px;
       text-align: left;
 
       button {
-        padding: 5px;
+        padding: 0;
+        height: 30px;
         width: 100%;
         margin: 0;
 
@@ -201,8 +208,12 @@ html, body {
 
     .file {
       display: table-cell;
+      margin: 0;
+      padding: 0;
+      padding-left: 5px;
       width: 30%;
       text-align: left;
+
     }
   }
 }

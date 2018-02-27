@@ -101,43 +101,26 @@ html, body {
 }
 
 .filemanager_table-files:hover {
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .filemanager_table-files:hover li:last-child button {
   display: inline-block;
-  margin-right: 5px;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-.filemanager_table-files:hover li:last-child button.action {
-  border: 2px solid darkblue;
-  background-color: lightblue;
-}
-
-.filemanager_table-files:hover li:last-child button.action:hover {
-  background-color: blue;
-}
-
-.filemanager_table-files:hover li:last-child button.danger {
-  border: 2px solid brown;
-  background-color: #F19425;
-}
-
-.filemanager_table-files:hover li:last-child button.danger:hover {
-  background-color: red;
 }
 
 .filemanager_table-files li {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   display: table-cell;
   border-left: 2px solid blue;
   border-right: 2px solid blue;
   margin: 0;
-  padding: 5px;
+  padding: 0;
+  height: 30px;
   width: 100px;
   max-width: 100px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .filemanager_table-files li:last-child {
@@ -146,19 +129,44 @@ html, body {
 
 .filemanager_table-files li:last-child button {
   display: none;
+  margin: 0;
+  margin-left: 5px;
+  border-radius: 5px;
+  height: 25px;
+  padding: 3px;
+}
+
+.filemanager_table-files li:last-child button.action {
+  border: 2px solid darkblue;
+  background-color: lightblue;
+}
+
+.filemanager_table-files li:last-child button.action:hover {
+  background-color: blue;
+}
+
+.filemanager_table-files li:last-child button.danger {
+  border: 2px solid brown;
+  background-color: #F19425;
+}
+
+.filemanager_table-files li:last-child button.danger:hover {
+  background-color: red;
 }
 
 .filemanager_table-files .dir {
   display: table-cell;
   margin: 0;
   padding: 0;
+  padding-left: 5px;
   width: 30%;
   max-width: 300px;
   text-align: left;
 }
 
 .filemanager_table-files .dir button {
-  padding: 5px;
+  padding: 0;
+  height: 30px;
   width: 100%;
   margin: 0;
   text-align: left;
@@ -177,6 +185,9 @@ html, body {
 
 .filemanager_table-files .file {
   display: table-cell;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
   width: 30%;
   text-align: left;
 }

@@ -10,7 +10,9 @@ function currDir($baseDir, $path)
     $nextDirName = getPOST("dirName");
     $array = [];
 
-    if (stripos($path, ".") !== false) { //если кто то пытается хакнуть и выйти выше $baseDir
+    //если кто то пытается хакнуть и выйти выше $baseDir
+    //у директорий с точкой в наименовании будут траблы
+    if (stripos($path, ".") !== false) {
         $path = ""; //в корень его
         $nextDirName = "";
     }
